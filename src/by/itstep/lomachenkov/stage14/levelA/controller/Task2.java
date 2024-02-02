@@ -1,7 +1,7 @@
 package by.itstep.lomachenkov.stage14.levelA.controller;
 
 import by.itstep.lomachenkov.stage14.levelA.model.VectorLogic;
-import by.itstep.lomachenkov.stage14.levelA.util.FormResult;
+import by.itstep.lomachenkov.stage14.util.FormResult;
 import by.itstep.lomachenkov.stage14.util.Input;
 import by.itstep.lomachenkov.stage14.util.Printer;
 

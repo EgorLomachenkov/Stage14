@@ -19,4 +19,8 @@ public class Input {
 
         return vector;
     }
+
+    public static int inputNumber() {
+        return SCANNER.nextInt();
+    }
 }
