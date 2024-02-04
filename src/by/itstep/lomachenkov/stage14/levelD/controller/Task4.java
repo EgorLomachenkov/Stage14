@@ -13,8 +13,8 @@ public class Task4 {
 
         int[] vector = Input.inputVectorValues();
 
-        int sum = VectorLogic.getElementsProdBetweenFirstSecZeroElements(vector);
+        int prod = VectorLogic.getElementsProdBetweenFirstSecZeroElements(vector);
 
-        Printer.print(ResultUI.formatSum(sum));
+        Printer.print(ResultUI.formatProd(prod));
     }
 }
