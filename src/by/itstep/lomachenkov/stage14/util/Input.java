@@ -20,6 +20,18 @@ public class Input {
         return vector;
     }
 
+    public static double[] inputDoubleVectorValues() {
+        String[] holder = SCANNER.nextLine().split(" ");
+
+        double[] vector = new double[holder.length];
+
+        for (int i = 0; i < vector.length; i++) {
+            vector[i] = Double.parseDouble(holder[i]);
+        }
+
+        return vector;
+    }
+
     public static int inputNumber() {
         return SCANNER.nextInt();
     }
