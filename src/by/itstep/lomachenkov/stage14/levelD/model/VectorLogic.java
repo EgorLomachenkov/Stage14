@@ -81,6 +81,59 @@ public class VectorLogic {
         return prod;
     }
 
+    public static double getElementsProdAfterAbsMax(double[] vector) throws Exception {
+        int index = getAbsMaxElementIndex(vector);
+
+        if (index == vector.length - 1) {
+            throw new Exception("The absolute max is the last element");
+        }
+
+        double prod = 1;
+
+        for (int i = index + 1; i < vector.length; i++) {
+            prod *= vector[i];
+        }
+
+        return prod;
+    }
+
+    public static int getSumAfterLastZero(int[] vector) throws Exception {
+        int index = getLastZeroElementIndex(vector);
+
+        if (index == -1) {
+            throw new Exception("There are no any zero-elements");
+        } else if (index == vector.length - 1) {
+            throw new Exception("The last zero is the last element");
+        }
+
+        int sum = 0;
+
+        for (int i = index + 1; i < vector.length; i++) {
+            sum += vector[i];
+        }
+
+        return sum;
+    }
+
+    public static double getSumAfterMaxElement(double[] vector) throws Exception {
+        int index = getMaxElementIndex(vector);
+
+        if (index == vector.length - 1) {
+            throw new Exception("The maximum is the last element");
+        } else if (index == -1) {
+            throw new Exception("There isn't max element");
+        }
+
+        double sum = 0;
+
+        for (int i = index + 1; i < vector.length; i++) {
+            sum += vector[i];
+        }
+
+        return sum;
+
+    }
+
     private static int getLastPositiveElementIndex(double[] vector) {
         int index = -1;
 
@@ -95,11 +148,25 @@ public class VectorLogic {
 
     private static int getMaxElementIndex(double[] vector) {
         double max = vector[0];
-        int index = 0;
+        int index = -1;
 
         for (int i = 1; i < vector.length; i++) {
             if (max < vector[i]) {
                 max = vector[i];
+                index = i;
+            }
+        }
+
+        return index;
+    }
+
+    private static int getAbsMaxElementIndex(double[] vector) {
+        double max = 0;
+        int index = -1;
+
+        for (int i = 0; i < vector.length; i++) {
+            if (max <= (vector[i] < 0 ? -vector[i] : vector[i])) {
+                max = vector[i] < 0 ? -vector[i] : vector[i];
                 index = i;
             }
         }
