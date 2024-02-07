@@ -1,6 +1,7 @@
 package by.itstep.lomachenkov.stage14.levelD.model;
 
 public class VectorLogic {
+    // O(N)
     public static double getElementsProduct(double[] vector) throws Exception {
         double prod = 1;
 
@@ -24,6 +25,7 @@ public class VectorLogic {
         return prod;
     }
 
+    // O(N)
     public static double getElementsSumBeforeLastPositive(double[] vector) throws Exception {
         double sum = 0;
         int lastPositiveIndex = getLastPositiveElementIndex(vector);
@@ -39,6 +41,7 @@ public class VectorLogic {
         return sum;
     }
 
+    // O(N)
     public static int getElementsSumBetweenFirstLastZeroElements(int[] vector) throws Exception {
         int sum = 0;
         int firstIndex = getZeroElementIndex(vector);
@@ -60,6 +63,7 @@ public class VectorLogic {
         return sum;
     }
 
+    // O(N)
     public static int getElementsProdBetweenFirstSecZeroElements(int[] vector) throws Exception {
         int prod = 1;
         int firstIndex = getZeroElementIndex(vector);
@@ -81,6 +85,7 @@ public class VectorLogic {
         return prod;
     }
 
+    // O(N)
     public static double getElementsProdAfterAbsMax(double[] vector) throws Exception {
         int index = getAbsMaxElementIndex(vector);
 
@@ -97,6 +102,7 @@ public class VectorLogic {
         return prod;
     }
 
+    // O(N)
     public static int getSumAfterLastZero(int[] vector) throws Exception {
         int index = getLastZeroElementIndex(vector);
 
@@ -115,6 +121,7 @@ public class VectorLogic {
         return sum;
     }
 
+    // O(N)
     public static double getSumAfterMaxElement(double[] vector) throws Exception {
         int index = getMaxElementIndex(vector);
 
@@ -134,6 +141,7 @@ public class VectorLogic {
 
     }
 
+    // O(N)
     private static int getLastPositiveElementIndex(double[] vector) {
         int index = -1;
 
@@ -146,6 +154,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getMaxElementIndex(double[] vector) {
         double max = vector[0];
         int index = -1;
@@ -160,6 +169,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getAbsMaxElementIndex(double[] vector) {
         double max = 0;
         int index = -1;
@@ -174,6 +184,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getMinElementIndex(double[] vector) {
         double min = vector[0];
         int index = 0;
@@ -188,6 +199,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getZeroElementIndex(int[] vector) {
         int index = -1;
 
@@ -200,6 +212,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getLastZeroElementIndex(int[] vector) {
         int index = -1;
 
@@ -212,6 +225,7 @@ public class VectorLogic {
         return index;
     }
 
+    // O(N)
     private static int getZeroElementIndex(int[] vector, int startIndex) {
         int index = -1;
 

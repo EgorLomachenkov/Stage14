@@ -1,4 +1,5 @@
 package by.itstep.lomachenkov.stage14.levelC.model;
+//all the methods O(N)
 
 public class VectorLogic {
     public static int getElementsAmountGreaterAvg(int[] vector) {
